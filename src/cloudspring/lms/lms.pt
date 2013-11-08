@@ -1,0 +1,18 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="plonetheme.healthlens">
+
+<body>
+    <div class="tile-title"><span>My Courses</span></div>
+    <div id="my_courses"></div>
+    <script>
+        $(document).ready( function () {
+            $.get('/@@lms_view', function(data) {
+                    $('#my_courses').hide().html(data).slideDown();
+            });
+        });
+    </script>
+</body>
+</html>

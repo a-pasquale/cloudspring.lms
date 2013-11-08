@@ -1,0 +1,15 @@
+<configure 
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="cloudspring.lms">
+
+  <browser:page
+      for="*"
+      name="lms_view"
+      class=".lms.LMSView"
+      template="lms_browserview.pt"
+      allowed_interface=".lms.ILMSView"
+      permission="zope2.View"
+      />
+
+</configure>
