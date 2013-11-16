@@ -5,6 +5,13 @@
       i18n:domain="plonetheme.healthlens">
 
 <body>
+    <style>
+        .progress { width:100px; float: right }
+        .progress { margin-bottom: 0px} 
+        .badge.new { background: rgb(91, 192, 222);} 
+        .badge.inprogress { background: rgb(240, 173, 78);} 
+        .badge.complete {background: rgb(92, 184, 92);}
+    </style>
     <div class="tile-title"><span>My Courses</span></div>
     <div id="my_courses"></div>
     <script>
